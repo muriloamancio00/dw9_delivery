@@ -8,11 +8,11 @@ import '../../core/rest_client/custom_dio.dart';
 import './products_repository.dart';
 
 class ProductsRepositoryImpl implements ProductsRepository {
-  
+
   final CustomDio dio;
 
-  ProductsRepositoryImpl(this.dio);
-  
+  ProductsRepositoryImpl({required this.dio});
+
 
   @override
   Future<List<ProductModel>> findAllProducts() async {

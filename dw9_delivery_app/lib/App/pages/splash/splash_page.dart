@@ -44,9 +44,12 @@ class SplashPage extends StatelessWidget {
                         height: 80,
                       ),
                       DeliveryButton(
-                        width: context.percentWidth(.60),
+                        width: context.percentWidth(.6),
                         height: 35,
-                        label: 'ACESSAR', onPressed: (){}
+                        label: 'ACESSAR', 
+                        onPressed: (){
+                          Navigator.of(context).popAndPushNamed('/home');
+                        },
                       ),
                     ]
                   ),
