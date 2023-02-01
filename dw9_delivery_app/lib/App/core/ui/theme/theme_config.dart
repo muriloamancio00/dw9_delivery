@@ -24,7 +24,7 @@ class ThemeConfig {
           colorScheme: ColorScheme.fromSeed(
             seedColor: ColorsApp.i.primary,
             primary: ColorsApp.i.primary,
-            secondary: ColorsApp.i.secundary,
+            secondary: ColorsApp.i.secondary,
             ),
             elevatedButtonTheme: ElevatedButtonThemeData(
               style: AppStyles.i.primaryButton,
