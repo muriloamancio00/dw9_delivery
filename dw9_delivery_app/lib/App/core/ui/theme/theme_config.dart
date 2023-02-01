@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 
-import '../app_styles.dart';
-import '../colors_app.dart';
-import '../text_styles.dart';
+import '../styles/app_styles.dart';
+import '../styles/colors_app.dart';
+import '../styles/text_styles.dart';
 
 class ThemeConfig {
   ThemeConfig._();
