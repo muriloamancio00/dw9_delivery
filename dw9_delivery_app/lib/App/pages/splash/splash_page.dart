@@ -1,6 +1,8 @@
 import 'package:dw9_delivery_app/App/core/ui/styles/colors_app.dart';
 import 'package:flutter/material.dart';
 
+import '../../core/ui/styles/app_styles.dart';
+
 class SplashPage extends StatelessWidget {
 
   const SplashPage({ super.key });
@@ -10,31 +12,18 @@ class SplashPage extends StatelessWidget {
 
     context.colors.primary;
 
-       return Theme(
-        data: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.black,
-            elevation: 0,
-            centerTitle: true,
-            iconTheme: IconThemeData(color: Colors.black)
+       return Scaffold(
+          appBar: AppBar(title: const Text('Splash'),
           ),
-          primaryColor: ColorsApp.i.primary,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: ColorsApp.i.primary,
-            primary: ColorsApp.i.primary,
-            secondary: ColorsApp.i.secundary),
-        ),
-        child: Scaffold(
-           appBar: AppBar(title: const Text('Splash'),
-           ),
-           body: Column(
-             children: [
-               Container(),
-               ElevatedButton(onPressed: (){}, child: Text('Teste'))
-             ],
-           ),
-       ),
+          body: Column(
+            children: [
+              Container(),
+              ElevatedButton(onPressed: (){}, child: Text('Teste')),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'text'),
+              )
+            ],
+          ),
        );
   }
 }
