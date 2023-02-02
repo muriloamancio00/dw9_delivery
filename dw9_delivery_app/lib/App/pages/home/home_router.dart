@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 
 import '../../repositories/products/products_repository.dart';
+import 'home_controller.dart';
 import 'home_page.dart';
 
 class HomeRouter {
@@ -16,7 +17,8 @@ class HomeRouter {
         create: (context) => ProductsRepositoryImpl(
           dio: context.read(),
           ),
-      )
+      ),
+      Provider(create: (context) => HomeController(context.read()))
     ],
     child: const HomePage(),
   );
